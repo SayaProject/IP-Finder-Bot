@@ -37,27 +37,24 @@ app = Client(
 @app.on_message(filters.command("start")& filters.private)
 async def start_handler(client: Client, message: Message):
     user_id = message.from_user.id
-    inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("IP Finder Bot", url="https://t.me/IPfinderobo_bot")]])
-    await app.send_photo(chat_id=message.chat.id,photo="https://te.legra.ph/file/c2e0b27bf45dcaa104633.jpg",caption='''
+    inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("Sᴀʏᴀ PʀᴏJᴇᴄᴛ 🥀", url="https://t.me/SayaProject")]])
+    await app.send_photo(chat_id=message.chat.id,photo="https://files.catbox.moe/2juie3.gif",caption='''
 👋 Hello There, 
 
-🤖 I'm IP FINDER BOT⚡️
+🤖 I'm IP FINDER BOT
 💫Send Any Ip Address To Me 
 🥳 I'm Also IPV6 Supported 
-☘️ Inline Mode
 😎Check IP Risk Level
-✅ 24x7 Active
-🚀 Deployed On Faster VPS
 
 😎 We all been in that moment when a device logged in to your account and you have no idea what that is or who that is. Well now you can use IP Finder bot to find 👀 Who The Hell Was That and Where The Hell Was Him at that time. All you need is that ip address only. Just give it a try🥳
 
-🧑‍💻How To Use: Start the bot and send any IP address to it. It's so esay✌️
+🧑‍💻How To Use: Start the bot and send any IP address to it. It's so esay.
 
 ◇───────────────◇
 
-👨‍💻 Developer: @Error_316 ✅
+👨‍💻 Developer: @sexyafraid
 
-👨‍💻Powered By @Codex_SL 🇱🇰
+👨‍💻Powered By @sayaproject
 
 ◇───────────────◇''', reply_markup=inline_keyboard1)
    
@@ -108,7 +105,7 @@ async def get_ip(client: Client, message: Message):
                  ip.details.get('country_currency', {}).get('code', None), ip.details.get('org', None),
                  ip.details.get('country_flag', {}).get('emoji', None)]
 
-            url = f"https://maps.locationiq.com/v3/staticmap?key=pk.{'YOUR API KEY'}&center={x[7]},{x[8]}&zoom=16&size=600x600&markers=icon:large-blue-cutout%7C{x[7]},{x[8]}"
+            url = f"https://maps.locationiq.com/v3/staticmap?key=pk.{'pk.7c08874277174487ab24f4588be00148'}&center={x[7]},{x[8]}&zoom=16&size=600x600&markers=icon:large-blue-cutout%7C{x[7]},{x[8]}"
             ip_data[message.chat.id] = {
             'ip_address': x[0]}
             try:
@@ -119,7 +116,7 @@ async def get_ip(client: Client, message: Message):
                 inline_keyboard = InlineKeyboardMarkup([ [InlineKeyboardButton('✈️ Open Location Via Google Map 🌎‍',url=f'https://www.google.com/maps/search/?api=1&query={x[7]}%2C{x[8]}')]])
                 await app.send_photo(chat_id=message.chat.id,
                                photo=url,
-                               caption=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @Codex_SL 🇱🇰",
+                               caption=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @sexyafraid",
                                reply_markup=inline_keyboard)
 
             except requests.exceptions.RequestException as e:
@@ -127,7 +124,7 @@ async def get_ip(client: Client, message: Message):
                 try:
                     inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("IP Finder Bot", url="https://t.me/IPfinderobo_bot")]])
                     await app.send_location(chat_id=message.chat.id,  latitude=float(x[7]), longitude=float(x[8]))
-                    await app.send_message(chat_id=message.chat.id,text=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @Codex_SL 🇱🇰",reply_markup=inline_keyboard1)         
+                    await app.send_message(chat_id=message.chat.id,text=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By@sexyafraid",reply_markup=inline_keyboard1)         
                 except:
                     await app.send_message(chat_id=message.chat.id,text="Invalid ip or Private ip Address ❌")
     except ValueError:
@@ -161,10 +158,10 @@ async def inline_query_handler(client: Client, query: InlineQuery):
             photo_url=f"https://telegra.ph/file/dba626143ccfea3c4d718.jpg",
             id="80100192",
             thumb_url=f"https://telegra.ph/file/dba626143ccfea3c4d718.jpg",
-            title='🌎 Inline Share Location 🔎',
+            title='Inline Share Location',
             description=f"🍀 Location Found :{x[0]}",
-            caption=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @Codex_SL 🇱🇰",         
-            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('‍🔥Codex SL 🇱🇰', url='https://t.me/Codex_SL')],[InlineKeyboardButton('🤖 IP ҒIΠDΣR BOT 🔎', url='https://t.me/IPfinderobo_bot')]]),
+            caption=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @sexyafraid",         
+            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('‍🔥- 𝐒𝚮𝚴𝐖𝚨𝚭‎ㅤ', url='https://t.me/sexyafraid')],[InlineKeyboardButton('Sᴀʏᴀ PʀᴏJᴇᴄᴛ 🥀', url='https://t.me/SayaProject')]]),
     )]
             await client.answer_inline_query(query.id, results=results,cache_time=2)
 
