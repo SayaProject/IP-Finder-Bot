@@ -114,7 +114,7 @@ async def get_ip(client: Client, message: Message):
             except requests.exceptions.RequestException as e:
                 #IF API request limit Exceeded Switch to location sharing option
                 try:
-                    inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("IP Finder Bot", url="https://t.me/IPfinderobo_bot")]])
+                    inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("Sᴀʏᴀ PʀᴏJᴇᴄᴛ 🥀", url="https://t.me/SayaProject")]])
                     await app.send_location(chat_id=message.chat.id,  latitude=float(x[7]), longitude=float(x[8]))
                     await app.send_message(chat_id=message.chat.id,text=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @sexyafraid",reply_markup=inline_keyboard1)         
                 except:
