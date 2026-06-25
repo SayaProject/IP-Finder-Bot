@@ -43,19 +43,11 @@ async def start_handler(client: Client, message: Message):
 
 🤖 I'm IP FINDER BOT
 💫Send Any Ip Address To Me 
-🥳 I'm Also IPV6 Supported 
-😎Check IP Risk Level
-
-😎 We all been in that moment when a device logged in to your account and you have no idea what that is or who that is. Well now you can use IP Finder bot to find 👀 Who The Hell Was That and Where The Hell Was Him at that time. All you need is that ip address only. Just give it a try🥳
 
 🧑‍💻How To Use: Start the bot and send any IP address to it. It's so esay.
 
 ◇───────────────◇
-
-👨‍💻 Developer: @sexyafraid
-
 👨‍💻Powered By @sayaproject
-
 ◇───────────────◇''', reply_markup=inline_keyboard1)
    
     if user_id not in user_ids:
@@ -124,7 +116,7 @@ async def get_ip(client: Client, message: Message):
                 try:
                     inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("IP Finder Bot", url="https://t.me/IPfinderobo_bot")]])
                     await app.send_location(chat_id=message.chat.id,  latitude=float(x[7]), longitude=float(x[8]))
-                    await app.send_message(chat_id=message.chat.id,text=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By@sexyafraid",reply_markup=inline_keyboard1)         
+                    await app.send_message(chat_id=message.chat.id,text=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @sexyafraid",reply_markup=inline_keyboard1)         
                 except:
                     await app.send_message(chat_id=message.chat.id,text="Invalid ip or Private ip Address ❌")
     except ValueError:
