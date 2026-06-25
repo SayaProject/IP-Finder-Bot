@@ -1,9 +1,8 @@
 
 
-# 🌐 IP Finder Bot for Telegram 🤖
+#  IP Finder Bot for Telegram 
 
-## 📜 Introduction
-IP Finder Bot is a Telegram bot 🤖 that provides detailed information about IP addresses 🌍, including geographical location 📍, Internet Service Provider (ISP), and more. It supports both IPv4 and IPv6 addresses and offers functionalities through direct messages 💬 and inline queries 🔍.
+.
 
 ## 🖼 Sample Output
 ![IP Finder Bot Sample](https://te.legra.ph/file/f3810a14eea0913203e5d.png)
@@ -35,7 +34,7 @@ https://maps.locationiq.com/v3/staticmap?key=YOUR_LOCATIONIQ_API_KEY&center=LATI
 Set Environmentals variable before deploy. -  [Instructions](#-installation-steps)
 
 [![Deploy with heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thejan64go/IP-Finder-Bot)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 ## ⚙️ Installation
