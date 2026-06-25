@@ -38,7 +38,7 @@ app = Client(
 async def start_handler(client: Client, message: Message):
     user_id = message.from_user.id
     inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("Sᴀʏᴀ PʀᴏJᴇᴄᴛ 🥀", url="https://t.me/SayaProject")]])
-    await app.send_photo(chat_id=message.chat.id,photo="https://files.catbox.moe/2juie3.gif",caption='''
+    await app.send_photo(chat_id=message.chat.id,photo="https://files.catbox.moe/4rlby2.jpg",caption='''
 👋 Hello There, 
 
 🤖 I'm IP FINDER BOT
@@ -155,9 +155,9 @@ async def inline_query_handler(client: Client, query: InlineQuery):
 
             results = [
             InlineQueryResultPhoto(
-            photo_url=f"https://telegra.ph/file/dba626143ccfea3c4d718.jpg",
+            photo_url=f"https://files.catbox.moe/4rlby2.jpg",
             id="80100192",
-            thumb_url=f"https://telegra.ph/file/dba626143ccfea3c4d718.jpg",
+            thumb_url=f"https://files.catbox.moe/4rlby2.jpg",
             title='Inline Share Location',
             description=f"🍀 Location Found :{x[0]}",
             caption=f"🍀 Location Found 🔎\n\n🛰IP Address ➤ {x[0]}\n🌎Country ➤ {x[1]}{x[12]}\n💠continent ➤{x[2]}\n🗺Province ➤ {x[3]}\n🏠City ➤ {x[4]}\n✉️ Postal Code ➤<code> {x[5]} </code>\n🗼Internet Provider ➤ {x[11]}\n🕢Time Zone➤ {x[6]}\n〽️Location ➤<code>{x[9]}</code>\n💰 Currency ➤ {x[10]} \n\n🔥Powered By @sexyafraid",         
