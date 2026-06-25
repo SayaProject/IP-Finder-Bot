@@ -44,7 +44,7 @@ async def start_handler(client: Client, message: Message):
  I'm IP FINDER BOT
  Send Any Ip Address To Me 
  
- How To Use: Start the bot and send any IP address to it. It's so esay.
+ How To Use: Start the bot and send any IP address to it. It's so easy.
 
 ◇───────────────◇
  Powered By @sayaproject
