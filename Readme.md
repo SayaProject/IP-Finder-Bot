@@ -4,8 +4,8 @@
 
 .
 
-## 🖼 Sample Output
-![IP Finder Bot Sample](https://te.legra.ph/file/f3810a14eea0913203e5d.png)
+## Sample Output
+![IP Finder Bot Sample](https://files.catbox.moe/7m08g5.png)
 
 ## ✨ Features
 - **IP Address Lookup**: Enter an IP address to get detailed information 🔎.
