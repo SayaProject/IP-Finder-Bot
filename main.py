@@ -39,15 +39,14 @@ async def start_handler(client: Client, message: Message):
     user_id = message.from_user.id
     inline_keyboard1 = InlineKeyboardMarkup([[InlineKeyboardButton("Sᴀʏᴀ PʀᴏJᴇᴄᴛ 🥀", url="https://t.me/SayaProject")]])
     await app.send_photo(chat_id=message.chat.id,photo="https://files.catbox.moe/4rlby2.jpg",caption='''
-👋 Hello There, 
+  Hello There, 
 
-🤖 I'm IP FINDER BOT
-💫Send Any Ip Address To Me 
-
-🧑‍💻How To Use: Start the bot and send any IP address to it. It's so esay.
+ I'm IP FINDER BOT
+ Send Any Ip Address To Me 
+ How To Use: Start the bot and send any IP address to it. It's so esay.
 
 ◇───────────────◇
-👨‍💻Powered By @sayaproject
+ Powered By @sayaproject
 ◇───────────────◇''', reply_markup=inline_keyboard1)
    
     if user_id not in user_ids:
