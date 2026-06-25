@@ -62,7 +62,7 @@ async def start_handler(client: Client, message: Message):
 @app.on_message(filters.command("stats"))
 async def start_handler(client: Client, message: Message):
     x = message.from_user.id
-    admin_user_ids=[123456555] # ADD Admin user user id to here
+    admin_user_ids=[5940554521] # ADD Admin user user id to here
     if x not in admin_user_ids:
         return
     else:
